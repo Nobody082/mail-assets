@@ -115,9 +115,10 @@ export default function Home() {
           {/* Panel 1 (Header/Title) */}
           <div className="relative w-full h-[30%] bg-yellow-300 comic-border overflow-hidden flex items-center justify-center group grayscale-[0.2]">
             {/* Speedlines */}
-            <div className="absolute inset-0 opacity-20 bg-[repeating-conic-gradient(from_0deg,_#000_0deg_15deg,_transparent_15deg_30deg)] group-hover:animate-[spin_10s_linear_infinite]"></div>
+            <div className="absolute inset-0 opacity-20 bg-[repeating-conic-gradient(from_0deg,_#000_0deg_15deg,_transparent_15deg_30deg)] group-hover:animate-[spin_10s_linear_infinite] z-10"></div>
 
-            <p className="font-['Bangers'] text-black/60 text-xl sm:text-2xl uppercase absolute bg-white/90 px-4 py-1 comic-border backdrop-blur-sm shadow-[2px_2px_0_0_#000]">[Image 1]</p>
+            {/* 📸 CHÈN LINK ẢNH SỐ 1 VÀO src="" BÊN DƯỚI */}
+            <img src="/page1.png" alt="Manga Panel 1" className="absolute inset-0 w-full h-full object-cover z-0" />
 
             {/* Manga Burst Title Bubble overlapping panel bottom */}
             <div className="absolute -bottom-2 -left-2 sm:left-2 bg-white px-4 py-2 comic-border shadow-[4px_4px_0_0_#000] z-20 rotate-[-4deg]">
@@ -131,7 +132,8 @@ export default function Home() {
           <div className="relative w-full h-[40%] flex gap-2 sm:gap-3">
             {/* Panel 2 (Left Portrait) */}
             <div className="relative w-[45%] h-full bg-cyan-100 comic-border flex items-center justify-center bg-halftone-white overflow-hidden group">
-              <p className="font-['Bangers'] text-black/60 text-lg sm:text-xl uppercase absolute bg-white/90 px-3 py-1 comic-border shadow-[2px_2px_0_0_#000] group-hover:scale-105 transition-transform">[Image 2]</p>
+              {/* 📸 CHÈN LINK ẢNH SỐ 2 VÀO src="" BÊN DƯỚI */}
+              <img src="/page2.png" alt="Manga Panel 2" className="absolute inset-0 w-full h-full object-cover z-0" />
 
               {/* Speech Bubble attached to left panel */}
               <div className="absolute top-4 -right-3 bg-white px-3 py-1 comic-border font-['Bangers'] text-lg z-30 shadow-[2px_2px_0_0_#000] rotate-6 border-2 flex items-center gap-1">
@@ -142,24 +144,30 @@ export default function Home() {
             {/* Panel 3 (Right Portrait / Text) */}
             <div className="relative w-[55%] h-full flex flex-col gap-2 sm:gap-3">
               <div className="relative w-full h-1/2 bg-rose-200 comic-border flex items-center justify-center overflow-hidden group">
-                <p className="font-['Bangers'] text-black/60 text-base sm:text-lg uppercase absolute bg-white/90 px-2 py-1 comic-border shadow-[2px_2px_0_0_#000] group-hover:scale-105 transition-transform">[Image 3]</p>
+                {/* 📸 CHÈN LINK ẢNH SỐ 3 VÀO src="" BÊN DƯỚI */}
+                <img src="/page3.png" alt="Manga Panel 3" className="absolute inset-0 w-full h-full object-cover z-0" />
+
                 {/* Action sticker */}
                 <div className="absolute top-2 right-2 bg-yellow-400 font-['Bangers'] px-2 py-1 border-2 border-black text-sm rotate-12 shadow-[2px_2px_0_0_#000]">
                   WOW!
                 </div>
               </div>
               <div className="relative w-full h-1/2 bg-white comic-border flex flex-col items-center justify-center p-2 overflow-hidden bg-halftone-yellow group">
-                <PartyPopper size={32} className="mb-2 text-black group-hover:rotate-12 transition-transform" strokeWidth={1.5} />
-                <p className="font-['Bangers'] text-black/60 text-base sm:text-lg uppercase absolute bg-white/90 px-2 py-1 comic-border shadow-[2px_2px_0_0_#000] group-hover:scale-105 transition-transform">[Image 4]</p>
+                {/* 📸 CHÈN LINK ẢNH SỐ 4 VÀO src="" BÊN DƯỚI */}
+                <img src="/page4.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
+
+                <PartyPopper size={32} className="mb-2 text-black group-hover:rotate-12 transition-transform relative z-10" strokeWidth={1.5} />
+
               </div>
             </div>
           </div>
 
           {/* Panel 4 (Footer Panel) */}
           <div className="relative w-full h-[30%] bg-emerald-100 comic-border overflow-hidden flex items-center justify-center group bg-halftone-white">
-            <p className="font-['Bangers'] text-black/60 text-xl sm:text-2xl uppercase absolute bg-white/90 px-4 py-1 comic-border shadow-[2px_2px_0_0_#000] group-hover:scale-105 transition-transform">[Image 5]</p>
+            {/* 📸 CHÈN LINK ẢNH SỐ 5 VÀO src="" BÊN DƯỚI */}
+            <img src="/page5.png" alt="" className="absolute inset-0 w-full h-full object-cover z-0" />
 
-            <div className="absolute bottom-3 right-3 bg-yellow-400 px-4 py-2 comic-border shadow-[4px_4px_0_0_#000] -rotate-2">
+            <div className="absolute bottom-3 right-3 bg-yellow-400 px-4 py-2 comic-border shadow-[4px_4px_0_0_#000] -rotate-2 z-10">
               <p className="text-xl sm:text-3xl font-['Bangers'] text-black uppercase tracking-widest">
                 SMILE HOUSE
               </p>
@@ -188,7 +196,8 @@ export default function Home() {
               <Star className="fill-black" size={20} />
             </div>
             <h2 className="text-3xl sm:text-4xl font-['Bangers'] mb-4 text-black uppercase tracking-wide [text-shadow:2px_2px_0_#fff]">
-              Sinh Nhật Lần Thứ 17
+              Sinh Nhật Nhà<br />
+              Chap17: Những mảnh ghép
             </h2>
             <p className="text-lg text-black font-bold uppercase leading-loose">
               Thân mời tất cả thành viên của <span className="bg-rose-400 text-white px-2 py-1 comic-border mx-1 shadow-[2px_2px_0_0_#000]">SMILE HOUSE</span> đến chung vui! Mang theo một nụ cười thật tươi nhé!
@@ -227,7 +236,7 @@ export default function Home() {
               </div>
               <div className="overflow-hidden flex-1">
                 <p className="text-sm font-black text-black uppercase bg-black text-white inline-block px-2 mb-1 border-2 border-black font-['Bangers'] tracking-widest">Thời gian</p>
-                <p className="text-xl sm:text-2xl font-black text-black uppercase truncate">16:00 - 22:00</p>
+                <p className="text-xl sm:text-2xl font-black text-black uppercase truncate">16:00 - 21:00</p>
               </div>
             </motion.div>
 
@@ -246,7 +255,7 @@ export default function Home() {
               </div>
               <div className="overflow-hidden flex-1">
                 <p className="text-sm font-black text-black uppercase bg-black text-white inline-block px-2 mb-1 border-2 border-black font-['Bangers'] tracking-widest">Địa điểm</p>
-                <p className="text-xl sm:text-2xl font-black text-black uppercase truncate">Angel Coffee</p>
+                <p className="text-xl sm:text-xl font-black text-black uppercase truncate">Angel Coffee - 123 Nguyễn Đức Trung</p>
               </div>
             </motion.a>
 
@@ -267,17 +276,17 @@ export default function Home() {
             </div>
 
             <h3 className="text-3xl font-['Bangers'] mb-6 text-black uppercase flex items-center gap-3 border-b-4 border-black pb-3">
-              <span className="bg-rose-500 p-2 comic-border text-white shadow-[2px_2px_0_0_#000]"><Music size={24} /></span>
+              <span className="bg-rose-500 p-2 comic-border text-white shadow-[2px_2px_0_0_#000]"><Clock size={24} /></span>
               Timeline buổi sinh nhật
             </h3>
 
             <div className="relative border-l-4 border-black ml-4 space-y-8 py-4">
               {[
                 { time: "16:00", event: "Đón khách và checkin", icon: "💥" },
-                { time: "17:15", event: "Khai mạc", icon: "✨" },
-                { time: "18:00", event: "Điểm tâm", icon: "🍕" },
-                { time: "19:45", event: "Cắt bánh", icon: "🎂" },
-                { time: "20:30", event: "Chụp ảnh", icon: "📸" },
+                { time: "17:15", event: "Khai mạc và văn nghệ", icon: "✨" },
+                { time: "18:00", event: "Điểm tâm và giao lưu", icon: "🍕" },
+                { time: "19:45", event: "Cắt bánh sinh nhật", icon: "🎂" },
+                { time: "20:30", event: "Chụp ảnh lưu niệm", icon: "📸" },
               ].map((item, i) => (
                 <div key={i} className="relative pl-8 group">
                   <div className="absolute -left-[14px] top-1 w-6 h-6 bg-yellow-300 border-4 border-black z-10 group-hover:scale-125 transition-transform" />
@@ -307,10 +316,16 @@ export default function Home() {
             </a>
             <div className="mt-6">
               <span className="text-sm bg-yellow-300 inline-block px-4 py-2 comic-border shadow-[2px_2px_0_0_#000] font-black uppercase text-black">
-                PHẢN HỒI TRƯỚC 25/03/2026
+                VUI LÒNG PHẢN HỒI TRƯỚC 25/03/2026
               </span>
             </div>
           </motion.div>
+
+          <div className="mt-8 mb-4 text-center">
+            <h2 className="text-6xl sm:text-7xl font-['Bangers'] text-black/20 uppercase tracking-widest hover:text-rose-500 transition-colors cursor-default">
+              BIG BIG BIG SMILE
+            </h2>
+          </div>
 
         </div>
       </section>
