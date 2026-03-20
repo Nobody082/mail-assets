@@ -309,7 +309,7 @@ export default function Home() {
             className="mt-12 text-center pb-8"
           >
             <a
-              href="mailto:smilehouse.sclub@gmail.com?subject=Xác nhận tham dự Sinh Nhật Nhà Smile&body=Mình xác nhận sẽ tham dự sinh nhật nhé!"
+              href="mailto:sclub.smilehouse@gmail.com?subject=Xác nhận tham dự Sinh Nhật Nhà Smile&body=Mình xác nhận sẽ tham dự sinh nhật nhé!"
               className="inline-flex w-full sm:w-auto px-8 py-5 bg-rose-500 hover:bg-rose-400 text-white font-['Bangers'] tracking-widest text-3xl sm:text-4xl uppercase items-center justify-center gap-4 comic-border comic-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0_0_#000] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all group"
             >
               <Gift size={32} className="group-hover:animate-bounce" /> XÁC NHẬN NGAY!
