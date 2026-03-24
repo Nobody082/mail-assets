@@ -308,13 +308,18 @@ export default function Home() {
             viewport={{ once: true }}
             className="mt-12 text-center pb-8"
           >
+            <div className="mb-8 flex justify-center">
+              <div className="text-lg sm:text-xl bg-cyan-100 inline-block px-6 py-3 comic-border shadow-[4px_4px_0_0_#000] font-black uppercase text-black rotate-[2deg] hover:rotate-0 transition-transform cursor-default">
+                PHÍ THAM GIA: <span className="text-rose-500 font-['Bangers'] text-2xl sm:text-3xl tracking-widest bg-white comic-border px-2 ml-2">130K</span>
+              </div>
+            </div>
             <a
               href="mailto:sclub.smilehouse@gmail.com?subject=Xác nhận tham dự Sinh Nhật Nhà Smile&body=Mình xác nhận sẽ tham dự sinh nhật nhé!"
               className="inline-flex w-full sm:w-auto px-8 py-5 bg-rose-500 hover:bg-rose-400 text-white font-['Bangers'] tracking-widest text-3xl sm:text-4xl uppercase items-center justify-center gap-4 comic-border comic-shadow hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[4px_4px_0_0_#000] active:translate-x-[6px] active:translate-y-[6px] active:shadow-none transition-all group"
             >
               <Gift size={32} className="group-hover:animate-bounce" /> XÁC NHẬN NGAY!
             </a>
-            <div className="mt-6">
+            <div className="mt-6 flex flex-col items-center">
               <span className="text-sm bg-yellow-300 inline-block px-4 py-2 comic-border shadow-[2px_2px_0_0_#000] font-black uppercase text-black">
                 VUI LÒNG PHẢN HỒI TRƯỚC 25/03/2026
               </span>
